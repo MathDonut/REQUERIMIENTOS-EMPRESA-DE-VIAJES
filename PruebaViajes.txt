@@ -1,0 +1,10 @@
+=============DATOS REGISTRADOS=============Fecha del registro:   2026-10-27
+Hora del registro:  06:37:12.258928400
+Nombre ingresado:  Matias Cortes Castillo
+Numero de documento ingresado:  1150686851
+Fecha del viaje ingresada:  10/12/2026
+Lugar de destino ingresado:  Jamaica
+Tipo de Maleta seleccionada:   Maleta Premium (MP)
+Numero de acompañantes registrados:   3
+Valor total del viaje:  1302600.0 COP
+==========================================
