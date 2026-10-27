@@ -1,0 +1,20 @@
+----------------------------------------------------------------|
+Identificador|            |Historia de Usuario   |             |Prioridad
+----------------------------------------------------------------|
+HU-01        |            |registrar cliente     |              |Alta
+             |            |(con opcion de salida |              |
+             |            |por palabra clave)    |              |
+----------------------------------------------------------------|
+HU-02        |            |Seleccionar tipo de   |              |Alta
+             |            |maleta (MB o MP)      |              |
+----------------------------------------------------------------|  
+HU-03        |            |Registrar cantidad de |              |Media
+             |            |acompañantes enteros  |              |
+----------------------------------------------------------------|
+HU-04        |            |Calcular valor total  |              |Alta
+             |            |del viaje con valida- |              |
+             |            |cion de banderas      |              |
+----------------------------------------------------------------|
+HU-05        |            |Visualizar informacion|              |Media
+             |            |y generar respaldo TXT|              |
+---------------------------------------------------------------
