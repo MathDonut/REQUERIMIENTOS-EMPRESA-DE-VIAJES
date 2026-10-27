@@ -85,8 +85,21 @@ public static void main(String[] args) {
             System.out.println("INGRESE SU NUMERO DE DOCUMENTO");
             numdoc = teclado.nextLine();
             
-            System.out.println("INGRESE LA FECHA DE SU VIAJE");
-            fechaV = teclado.nextLine();
+           boolean fechaValida = false;
+                    while (!fechaValida) {
+                        System.out.println("INGRESE LA FECHA DE SU VIAJE (Formato AAAA-MM-DD):");
+                        fechaV = teclado.nextLine();
+                        try {
+                            LocalDate viajeDate = LocalDate.parse(fechaV);
+                            if (viajeDate.isBefore(LocalDate.now())) {
+                                System.out.println("¡ERROR! La fecha del viaje no puede ser una fecha pasada. Hoy es: " + LocalDate.now());
+                            } else {
+                                fechaValida = true; // Fecha correcta, rompe el ciclo de validación
+                            }
+                        } catch (Exception e) {
+                            System.out.println("¡ERROR! Formato de fecha inválido. Por favor use el formato AAAA-MM-DD.");
+                        }
+                    }
             
             System.out.println("INGRESE SU DESTINO");
             destino = teclado.nextLine();
@@ -99,7 +112,11 @@ public static void main(String[] args) {
             
             //CREO UN IF PARA REGISTRAR LOS DOS TIPOS DE MALETA Y CONVERTIRLOS AL VALOR A OPERAR EN EL CASO 4
             if (tipomaleta.equalsIgnoreCase("MB")) {
-            costomaleta = maletabasica;
+            costomaleta = maletabasica;  maletalista = true;
+            System.out.println("!Maleta Basica seleccionada con exito!");
+            }else if (tipomaleta.equalsIgnoreCase("MP")) {
+            costomaleta = maletapremium;
+            maletalista = true;
             maletalista = true;
             System.out.println("!Maleta Basica seleccionada con exito!");
             }else if (tipomaleta.equalsIgnoreCase("MP")) {
